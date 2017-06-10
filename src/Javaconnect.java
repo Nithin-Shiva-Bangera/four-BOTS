@@ -19,7 +19,7 @@ public class Javaconnect
     try
     {
         Class.forName("org.sqlite.JDBC");
-        Connection conn=DriverManager.getConnection("jdbc.sqlite:C:\\Users\\Nithin S Bangera\\Documents\\NetBeansProjects\\Library Management System\\LibraryMS.sqlite");
+        Connection conn=DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Nithin S Bangera\\Documents\\NetBeansProjects\\Library Management System\\LibraryMS.sqlite");
         return conn;
     }catch(Exception e)
     {
